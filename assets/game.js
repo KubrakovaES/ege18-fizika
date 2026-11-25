@@ -67,6 +67,7 @@
   }
   function finish(){
     const total=CARDS.length, clean=total-errors.size;
+    window.ymGoal&&ymGoal("finish");
     $('area').innerHTML=`<div class="finish">
       <h2>Раздел пройден</h2>
       <div class="score">${clean} / ${total}</div>
